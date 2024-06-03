@@ -516,6 +516,7 @@ class SafariBooks:
             self.display.exit("Login: unable to reach Safari Books Online. Try again...")
 
     def check_login(self):
+        
         response = self.requests_provider(PROFILE_URL, perform_redirect=False)
 
         if response == 0:
